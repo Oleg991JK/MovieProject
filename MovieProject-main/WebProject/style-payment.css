@@ -1,0 +1,101 @@
+.payment-page {
+    min-height: 100vh;
+    background-color: #4a2020; /* Основний темний фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: 'Courier New', monospace;
+}
+
+.payment-container {
+    width: 100%;
+    max-width: 600px; /* Вузький контейнер для форми */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.payment-card {
+    background-color: #311b1b; /* Ще темніший колір для карток */
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.payment-title {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+/* Поля вводу */
+.pay-input {
+    width: 100%;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.payment-details {
+    text-align: left;
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.payment-details p { margin: 10px 0; }
+
+/* Квадрати методів оплати */
+.pay-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.method-item {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(77, 64, 64);
+    border: 2px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.method-item.active {
+    border-color: #d4c5c5; /* Красная рамка для активного метода */
+    background: rgba(165, 141, 142, 0.1);
+}
+
+.method-item img {
+    width: 60px;
+    height: auto;
+}
+
+/* Стили для кнопки (если еще нет) */
+.checkout-btn {
+    width: 200px;
+    padding: 15px;
+    background-color: #0a0808;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #947072;
+    transition: 0.5s;
+}

@@ -1,0 +1,86 @@
+/* Сторінка логіну використовує ті ж контейнери, що й оплата */
+.login-page {
+    min-height: 100vh;
+    background-color: #4a2020; /* Наш основний темно-червоний */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+.login-card {
+    background-color: #311b1b; /* Темніший колір картки */
+    border-radius: 25px;
+    padding: 50px 40px;
+    width: 100%;
+    max-width: 400px; /* Логін зазвичай вужчий за оплату */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+}
+
+.login-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+/* Поля вводу */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pay-input {
+    width: 100%;
+    background-color: #d9d9d9;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+.pay-input:focus {
+    border-color: #4a76a8; /* Синій фокус */
+    background-color: #fff;
+}
+
+/* Кнопка Sign In */
+.login-btn {
+    background-color: #d9d9d9;
+    color: #311b1b;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Додаткове посилання (якщо захочеш додати "Forgot password") */
+.login-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.login-footer a {
+    color: white;
+    text-decoration: underline;
+}
