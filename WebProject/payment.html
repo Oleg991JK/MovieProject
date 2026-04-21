@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-payment.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <section class="payment-page">
+    <div class="payment-container">
+        
+        <div class="payment-card">
+            <h2 class="payment-title">Payment</h2>
+            <form class="payment-form">
+                <input type="email" placeholder="email" id="email" class="pay-input">
+                <input type="password" placeholder="password" id="password" class="pay-input">
+            </form>
+            <div class="payment-details">
+                <p>month subscription: <span>Pakiet XL</span></p>
+                <p>total:</p>
+            </div>
+        </div>
+
+        <div class="payment-card">
+            <h2 class="payment-title">Choose your pay method</h2>
+<div class="pay-methods-grid">
+    <div class="method-item active" data-method="visa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+    </div>
+    <div class="method-item" data-method="applepay">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay">
+    </div>
+    <div class="method-item" data-method="googlepay">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="Google Pay">
+    </div>
+    <div class="method-item" data-method="blik">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/BLIK_logo.svg" alt="BLIK">
+    </div>
+</div>
+            <button id="checkoutBtn" class="checkout-btn">Check out</button>
+        </div>
+
+    </div>
+</section>
+</body>
+<script src="script.js"></script>
+</html>
