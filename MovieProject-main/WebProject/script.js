@@ -11,6 +11,23 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', function() {
+        const isOpen = this.classList.contains('open');
+        const icon = this.querySelector('.icon');
+
+
+        // Відкриваємо поточний
+        if (!isOpen) {
+            this.classList.add('open');
+            icon.innerText = '−'; // Ставимо довге тире
+        } else {
+            this.classList.remove('open');
+            icon.innerText = '+';
+        }
+    });
+});
+
 document.getElementById('checkoutBtn').addEventListener('click', function() {
     // 1. Находим элементы
     const email = document.getElementById('email').value;
